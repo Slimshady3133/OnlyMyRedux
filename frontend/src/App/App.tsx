@@ -9,7 +9,7 @@ function App(): JSX.Element {
   const [todos, todosSet] = useTodos([]);
   useEffect(() => {
     api.loadTodos().then((data) => todosSet(loadTasks(data)));
-  }, [todosSet]);
+  }, []);
   return (
     <div>
       <TodoList todos={todos} todosSet={todosSet} />
