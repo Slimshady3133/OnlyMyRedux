@@ -53,6 +53,8 @@
       "jsx-a11y/label-has-associated-control": 0,
       "react/jsx-one-expression-per-line": 0,
       "jsx-a11y/click-events-have-key-events": 0,
+      "no-useless-catch": 0,
+      "react/jsx-curly-newline": 0,
       "default-case": 0,
       "@typescript-eslint/default-param-last": 0,
       "@typescript-eslint/switch-exhaustiveness-check": 2,

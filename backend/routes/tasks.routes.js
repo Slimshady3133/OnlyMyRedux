@@ -5,6 +5,9 @@ router.get('/', async (req, res) => {
   try {
     const tasksAll = await Task.findAll({
       raw: true,
+      // ORDER BY:[{
+      //   id:'asc'
+      // }]
     });
     console.log(tasksAll);
     res.json(tasksAll);
