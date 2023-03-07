@@ -5,13 +5,9 @@ router.get('/', async (req, res) => {
   try {
     const tasksAll = await Task.findAll({
       raw: true,
-      // ORDER BY:[{
-      //   id:'asc'
-      // }]
+      order: [['id', 'ASC']],
     });
-    console.log(tasksAll);
     res.json(tasksAll);
-    console.log('работаю');
   } catch (message) {
     res.status(500).json({ message: 'Server error' });
   }
